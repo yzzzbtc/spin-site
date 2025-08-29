@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$SPIN — Coming Soon</title>
+  <meta name="description" content="$SPIN — provably fair daily jackpot. Official site coming soon.">
+  <!-- Hide placeholder from search engines until you're ready -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="$SPIN — Coming Soon">
+  <meta property="og:description" content="Provably fair daily jackpot. Official site launching soon.">
+  <meta property="og:image" content="/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg:#0b0b0f;
+      --fg:#e7e7ec;
+      --muted:#a4a4b2;
+      --accent1:#7c3aed;
+      --accent2:#00e7f0;
+    }
+    * { box-sizing:border-box; }
+    html, body { height:100%; }
+    body {
+      margin:0; background: radial-gradient(1200px 800px at 50% 20%, rgba(124,58,237,0.12), transparent 60%),
+                          radial-gradient(900px 600px at 80% 80%, rgba(0,231,240,0.10), transparent 60%),
+                          var(--bg);
+      color:var(--fg); display:flex; align-items:center; justify-content:center;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+    }
+    .card {
+      width:min(720px, 92vw);
+      padding:32px 28px;
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:24px;
+      background:rgba(255,255,255,0.02);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+      text-align:center;
+    }
+    .brand {
+      display:inline-flex; align-items:center; gap:14px; margin-bottom:10px;
+    }
+    .logo {
+      width:42px; height:42px; border-radius:12px; display:grid; place-items:center;
+      background: conic-gradient(from 180deg at 50% 50%, var(--accent1), var(--accent2));
+      color:#0b0b0f; font-weight:800; letter-spacing:0.5px;
+    }
+    h1 {
+      margin:0; font-size:clamp(26px, 4vw, 42px); line-height:1.1;
+      background: linear-gradient(90deg, var(--accent2), var(--accent1));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      font-weight:800;
+    }
+    p { margin:12px 0 0; color:var(--muted); font-size:clamp(14px, 2vw, 18px); }
+    .row { margin-top:22px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .pill, .input {
+      border-radius:999px; padding:12px 16px; border:1px solid rgba(255,255,255,0.12);
+      background:rgba(255,255,255,0.02); color:var(--fg);
+    }
+    .input { min-width:260px; outline:none; }
+    .pill.cta {
+      background:linear-gradient(90deg, var(--accent2), var(--accent1)); color:#0b0b0f; font-weight:700; border:0; cursor:pointer;
+    }
+    .meta { margin-top:18px; font-size:12px; color:#8b8b98; }
+    .social { display:flex; gap:14px; justify-content:center; margin-top:10px; }
+    .social a { color:var(--muted); text-decoration:none; border-bottom:1px dotted rgba(255,255,255,0.2); }
+    footer { position:fixed; bottom:14px; left:0; right:0; text-align:center; color:#7d7d8a; font-size:12px; }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-label="$SPIN Coming Soon">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">$</div>
+      <h1>$SPIN</h1>
+    </div>
+    <p>Provably fair daily jackpot. Transparent. On-chain. For the people.</p>
+    <div class="row">
+      <input class="input" type="email" placeholder="your@email.com (optional)" aria-label="email">
+      <button class="pill cta" onclick="alert('Thanks! Mailing list coming at launch.')">Notify me</button>
+    </div>
+    <div class="social">
+      <a href="#" onclick="alert('Add your socials when ready')">Twitter/X</a>
+      <a href="#" onclick="alert('Add your socials when ready')">Telegram</a>
+      <a href="#" onclick="alert('Add your socials when ready')">GitHub</a>
+    </div>
+    <div class="meta">© {year} $SPIN — All rights reserved.</div>
+  </main>
+  <footer>Coming soon. This placeholder is <em>noindex</em> by default—remove that when you launch.</footer>
+  <script>
+    document.body.innerHTML = document.body.innerHTML.replace('{year}', new Date().getFullYear());
+  </script>
+</body>
+</html>
